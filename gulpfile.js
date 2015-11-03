@@ -12,6 +12,7 @@ gulp.task('test-compile',function(){
 	exec('../pochani.js test.md');
     process.chdir('..');
 });
+//watchers
 gulp.task('watch.js',function(){
 	gulp.watch('functions.js',['minify','test-compile']);
 });
