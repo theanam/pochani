@@ -1,0 +1,5 @@
+node_modules/
+test/functions.js
+test/jquery.js
+test/pochaslider.min.js
+test/test.md.html
