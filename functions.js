@@ -9,8 +9,7 @@ $('.slide').pochaSlider({
 		//pin
 		$('.toolbox-inner').toggleClass('hide');
 		$(this).toggleClass('pinned');
-
-	})
+	});
 	var videoPlaying=false;
 		//annotation
 	$('.annotation').on('click',function(){
