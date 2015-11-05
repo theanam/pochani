@@ -52,14 +52,41 @@ html,body{
     flex-wrap:wrap;
     flex-direction:row;
     flex-flow:row wrap;
+    padding:40px;
+}
+/*slide that has a list*/
+
+.slide.has-list{
+    display:block;
+}
+.slide.heading-paragaraph{
+    display:block;
+}
+.slide.heading-paragaraph *{
+    text-align: left;
+}
+.slide ul,.slide ol{
+    margin-left:50px;
 }
 .slide h1{
    display:block;
    flex:1 100%;
    text-align:center;
 }
-.slide img,.slide figure{
-    display:block;
+.slide.single-image img,.slide.single-image figure{
+    max-width:700px;
+    max-height:600px;
+    max-width:80vw;
+    max-height:70vh;
+    flex:1 100%;
+}
+.slide.single-image *{
+    flex:1 100%;
+    text-align:center;
+}
+.slide.multiple-image img,.slide.multiple-image figure{
+    max-height:250px;
     max-height:30vh;
+    max-width:300px;
     max-width:90vw;
 }

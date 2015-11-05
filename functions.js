@@ -1,4 +1,13 @@
-
+$.each($('.slide'),function(i,e){
+    var current = $(e);
+    //has list
+    current.find('ul,ol').length>0 && current.addClass('has-list');
+    //has image(s)
+    current.find('img').length==1 && current.addClass('single-image');
+    current.find('img').length>1 && current.addClass("multiple-image");
+    //has heading and description
+    current.find('h1,h2').length>0 && current.find('p').length>0 && current.addClass('heading-paragaraph');
+});
 //slider
 $('.slide').pochaSlider({
 		autoPlay:false,
@@ -94,12 +103,16 @@ $('.slide').pochaSlider({
         mouseDown=true;
         previousX=e.offsetX;
         previousY=e.offsetY;
+        //make the toolbox behind
+        $('.toolbox').css('z-index','1000');
     }
     //event listeners
     canvas.on('mousedown',drawingStart);
     function drawingEnd(e){
         e.preventDefault();
         mouseDown=false;
+        //draw above toolbox
+         $('.toolbox').css('z-index','5000');
     }
     canvas.on('mouseup',drawingEnd);
     canvas.on('mouseleave',drawingEnd);
