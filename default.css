@@ -1,0 +1,65 @@
+/*
+This part is the building block of the presentation layer. Change it with caution
+*/
+/*
+    building blocks
+*/
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+}
+.slidecontainer,.slide{
+    width:100%;
+    height:100%;
+    font-size:1.5em;
+}
+.slide{
+    box-sizing:border-box;
+}
+.slidecontainer{
+        position:relative;
+        display:none;
+}
+.slide{
+        position:absolute;
+        transition:all 0.5s;
+}
+/*
+    Animation : fade
+*/
+.pochaslider-active{
+    opacity:1;
+}
+.pochaslider-next{ 
+    opacity:0;
+}
+.pochaslider-passed{
+    opacity:0;
+}
+.pochaslider-idle{ 
+    opacity:0;
+}
+
+/*
+    Layout
+*/
+.slide{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-direction:row;
+    flex-flow:row wrap;
+}
+.slide h1{
+   display:block;
+   flex:1 100%;
+   text-align:center;
+}
+.slide img,.slide figure{
+    display:block;
+    max-height:30vh;
+    max-width:90vw;
+}

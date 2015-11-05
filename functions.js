@@ -1,3 +1,5 @@
+
+//slider
 $('.slide').pochaSlider({
 		autoPlay:false,
 		keyboardNavigation:true
