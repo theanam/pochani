@@ -1,0 +1,16 @@
+/*
+	You can set animation destination for the four states of a slide. for more information read the documentation
+	for PochaSlider: https://github.com/theanam/pochaslider
+*/
+.pochaslider-active{
+    opacity:1;
+}
+.pochaslider-next{ 
+    opacity:0;
+}
+.pochaslider-passed{
+    opacity:0;
+}
+.pochaslider-idle{ 
+    opacity:0;
+}

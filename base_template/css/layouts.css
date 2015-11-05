@@ -1,0 +1,54 @@
+/*
+    Basic Layout file, you won't love to edit it until you have a good reason to change the layout
+    helper calasses can be found / changed in js/helper_classes.js
+*/
+.slide{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-direction:row;
+    flex-flow:row wrap;
+    padding:40px;
+}
+.slide ul,.slide ol{
+    margin-left:50px;
+}
+.slide h1{
+   display:block;
+   flex:1 100%;
+   text-align:center;
+}
+/*slide that has a list*/
+.slide.has-list{
+    display:block;
+}
+/*Slide that has heading and paragaraph*/
+.slide.heading-paragaraph{
+    display:block;
+}
+.slide.heading-paragaraph *{
+    text-align: left;
+}
+/*Slide with a single image*/
+.slide.single-image img,.slide.single-image figure{
+    max-width:700px;
+    max-height:600px;
+    max-width:80vw;
+    max-height:70vh;
+    flex:1 100%;
+}
+.slide.single-image *{
+    flex:1 100%;
+    text-align:center;
+}
+/*Slide that has multiple images*/
+.slide.multiple-image img,.slide.multiple-image figure{
+    max-height:250px;
+    max-height:30vh;
+    max-width:300px;
+    max-width:90vw;
+}
+.slide.multiple-image *{
+    text-align:center;
+}

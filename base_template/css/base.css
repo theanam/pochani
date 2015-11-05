@@ -1,0 +1,26 @@
+/*
+Base Styles. that are required for PochaSlider
+editing this file is not suggested
+*/
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+}
+.slidecontainer,.slide{
+    width:100%;
+    height:100%;
+    font-size:1.5em;
+}
+.slide{
+    box-sizing:border-box;
+}
+.slidecontainer{
+        position:relative;
+        display:none;
+}
+.slide{
+        position:absolute;
+        transition:all 0.5s;
+}
