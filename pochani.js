@@ -14,11 +14,11 @@ var style = options.find(function(e){
 if(style){
 	fs.exists(style,function(exists){
 		if(!exists)
-			style = path.join(__dirname,'resources/default.css');
+			style = path.join(__dirname,'resources/template.css');
 	});
 }
 else{
-	style= path.join(__dirname,'/resources/default.css');
+	style= path.join(__dirname,'/resources/template.css');
 }
 function copyFile(oldf,newf){
 	var oldFile = fs.createReadStream(oldf);
@@ -52,10 +52,17 @@ var finalResult = template.replace('{{{{{pochani}}}}}',output);
 //generate file
 //copy libraries
 console.log('Copying Necessary files and libraries...');
-copyFile(path.join(__dirname,'/resources/style.css'),path.join(process.cwd(),'style.css'));
-copyFile(path.join(__dirname,'resources/pochaslider.min.js'),path.join(process.cwd(),'pochaslider.min.js'));
-copyFile(path.join(__dirname,'/resources/functions.min.js'),path.join(process.cwd(),'functions.min.js'));
-copyFile(path.join(__dirname,'/resources/jquery.js'),path.join(process.cwd(),'jquery.js'));
+try{
+console.log('Making resource directory...');
+fs.mkdirSync(path.join(process.cwd(),'./res'));
+}catch(e){
+console.log('Directory Exists..');
+}
+copyFile(path.join(__dirname,'/resources/style.css'),path.join(process.cwd(),'res/style.css'));
+copyFile(style,path.join(process.cwd(),'res/template.css'));
+copyFile(path.join(__dirname,'resources/pochaslider.min.js'),path.join(process.cwd(),'res/pochaslider.min.js'));
+copyFile(path.join(__dirname,'/resources/functions.min.js'),path.join(process.cwd(),'res/functions.min.js'));
+copyFile(path.join(__dirname,'/resources/jquery.js'),path.join(process.cwd(),'res/jquery.js'));
 console.log('Writing output file...');
 fs.writeFileSync(filename+".html",finalResult,'utf-8');
 console.log('All Done...')

@@ -1,5 +1,5 @@
 --page--
-welcome to pochani
+welcome to pochani.js
 =====
 --page--
 ## Features
