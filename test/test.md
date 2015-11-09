@@ -1,23 +1,21 @@
 --page--
-# welcome to pochani
+# Pochani is awesome
 --page--
-## Features
-* anam ahmed
-* test account
-* another test
-* another test
-* another test
-* another test
+## Here's Why
+* Create presentation from Command line
+* Draw and annotate on presentation
+* Webcam feed in presentations
+* Full Touch Support
+* Modern Flexbox layout
+* Customizable animation and template
 --page--
-## h2dasdasda
-this one is another test case where there is a heading and a paragaraph. of course this types of slides are bad. but still people use it. so we have nothing to do but to provide it.
+## Use Markdown to craate presentations
+Here are some placeholder text
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque debitis illo explicabo qui ratione autem ipsum minus distinctio similique nostrum, voluptates magnam repudiandae. Deleniti eligendi quidem, mollitia vero tempora!
 --page--
-## just a sample page with an image
-
-![test](http://fadmanagersrl.com/wp-content/uploads/2015/07/flexbox.jpg)
-![test](http://fadmanagersrl.com/wp-content/uploads/2015/07/flexbox.jpg)
-![test](http://fadmanagersrl.com/wp-content/uploads/2015/07/flexbox.jpg)
+## Add images
+![test](img/tiger.jpg)
+![banana](img/macaw.jpg)
 --page--
-
-Heading only
-====
+## Thank you
+any questions?

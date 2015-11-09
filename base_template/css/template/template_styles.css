@@ -1,4 +1,25 @@
 /*
+##### You can change template styles in this section #####
 Template styles are here, this is the page you should edit to add your own styles
 and make your presentation look exactly as you want
 */
+
+/*media queries*/
+
+/*styles for Standard template*/
+html{
+	font-family: sans-serif;
+}
+/*here's a sample on how to add diferent background for different pages, could have been easier,
+ but I tried not to add any complexity to the existing markdown syntax*/
+.slide:nth-child(2n+1){
+	/*make every odd slide dark background, light text color*/
+	background:#34495e;
+	color:white;
+}
+.childs-1>h1{
+	border-bottom:3px solid #c0392b;
+}
+.slide>p{
+	text-align: justify;
+}
