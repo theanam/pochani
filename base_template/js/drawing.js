@@ -1,4 +1,4 @@
-var strokeColor='#2c3e50';
+var strokeColor='#e74c3c';
 var mouseDown = false;
 var previousX=0;
 var previousY=0;
@@ -35,30 +35,30 @@ function drawingStart(e){
     }
 }
 function drawingEnd(e){
-        e.preventDefault();
-        mouseDown=false;
-        $('.toolbox').css('z-index','5000');
+    e.preventDefault();
+    mouseDown=false;
+    $('.toolbox').css('z-index','5000');
 }
 function drawingProgress(e){
-        e.preventDefault();
-        if(mouseDown){
-            ctx.beginPath();
-            ctx.moveTo(previousX,previousY);
-            var currentX;
-            var currentY;
-            if(e.offsetX){
-                currentX=e.clientX;
-                currentY=e.clientY;
-            }
-            else{
-                //touch
-                currentX=e.originalEvent.touches[0].clientX;
-                currentY=e.originalEvent.touches[0].clientY;
-            }
-            ctx.lineTo(currentX,currentY);
-            ctx.stroke();
-            previousX=currentX;
-            previousY=currentY;
+    e.preventDefault();
+    if(mouseDown){
+        ctx.beginPath();
+        ctx.moveTo(previousX,previousY);
+        var currentX;
+        var currentY;
+        if(e.offsetX){
+            currentX=e.clientX;
+            currentY=e.clientY;
+        }
+        else{
+            //touch
+            currentX=e.originalEvent.touches[0].clientX;
+            currentY=e.originalEvent.touches[0].clientY;
+        }
+        ctx.lineTo(currentX,currentY);
+        ctx.stroke();
+        previousX=currentX;
+        previousY=currentY;
         }
 }
 function hideAnnotation(){

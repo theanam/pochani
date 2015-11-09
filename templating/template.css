@@ -24,6 +24,7 @@ and make your presentation look exactly as you want
 /*media queries*/
 @media (max-width: 800px){
 	html{
+		/*make text smaller for smaller screens to fit better*/
 		font-size:7px;
 	}
 }
