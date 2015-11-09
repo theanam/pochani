@@ -63,6 +63,7 @@ copyFile(style,path.join(process.cwd(),'res/template.css'));
 copyFile(path.join(__dirname,'resources/pochaslider.min.js'),path.join(process.cwd(),'res/pochaslider.min.js'));
 copyFile(path.join(__dirname,'/resources/functions.min.js'),path.join(process.cwd(),'res/functions.min.js'));
 copyFile(path.join(__dirname,'/resources/jquery.js'),path.join(process.cwd(),'res/jquery.js'));
+copyFile(path.join(__dirname,'/resources/touch.js'),path.join(process.cwd(),'res/touch.js'));
 console.log('Writing output file...');
 fs.writeFileSync(filename+".html",finalResult,'utf-8');
 console.log('All Done...')

@@ -7,6 +7,9 @@ var ctx = $('.annotate').get(0).getContext('2d');
 function toggleAnnotation(){
    $('.colors').toggleClass('hiddencolor');
    $('.annotate').toggle();
+   if('ontouchstart' in window){
+    $('.touchnav').toggleClass('shown');
+   }
 }
 function resizeAnnotate(){
     $('.annotate').attr({
@@ -58,15 +61,22 @@ function drawingProgress(e){
             previousY=currentY;
         }
 }
+function hideAnnotation(){
+    resizeAnnotate();
+    $('.colors').removeClass('hiddencolor');
+    $('.annotate').hide();
+    $('.touchnav').removeClass('shown');
+}
 //hide annotation on slide change
 $(document).on('keydown',function(e){
-    	if(e.keyCode==32 || e.keyCode==37 ||e.keyCode==39){
-    		resizeAnnotate();
-    		$('.colors').removeClass('hiddencolor');
-    		$('.annotate').hide();
-    	}
-    });
-resizeAnnotate(); //very beginning
+    if(e.keyCode==32 || e.keyCode==37 ||e.keyCode==39){
+        hideAnnotation();
+    }
+});
+$('.touchnav').on('tap',hideAnnotation);
+//init
+resizeAnnotate();
+// event listeners
 $(window).on('resize',resizeAnnotate);
 canvas.on('mousedown',drawingStart);
 canvas.on('mouseup',drawingEnd);

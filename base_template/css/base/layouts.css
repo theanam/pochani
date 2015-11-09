@@ -9,7 +9,8 @@
     flex-wrap:wrap;
     flex-direction:row;
     flex-flow:row wrap;
-    padding:40px;
+    padding:60px;
+    overflow:hidden;
 }
 .slide ul,.slide ol{
     margin-left:50px;
