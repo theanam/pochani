@@ -14,8 +14,8 @@ Here are some placeholder text
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque debitis illo explicabo qui ratione autem ipsum minus distinctio similique nostrum, voluptates magnam repudiandae. Deleniti eligendi quidem, mollitia vero tempora!
 --page--
 ## Add images
-![test](img/tiger.jpg)
-![banana](img/macaw.jpg)
+![tiger](img/tiger.jpg)
+![macaw](img/macaw.jpg)
 --page--
 ## Thank you
 any questions?

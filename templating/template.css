@@ -22,7 +22,11 @@ and make your presentation look exactly as you want
 */
 
 /*media queries*/
-
+@media (max-width: 800px){
+	html{
+		font-size:7px;
+	}
+}
 /*styles for Standard template*/
 html{
 	font-family: sans-serif;
