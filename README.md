@@ -1,5 +1,4 @@
-(This documentation isn't complete yet please igonre)
-Pochani: Presentation from the command line
+Pochani: Presentation from the command line (This documentation isn't complete yet please igonre)
 =====
 
 Pochani is a customizable Command line tool for creating great presentation from __Markdown__ file. You don't need any memory hingry presentation application to create presentation.Simply 
