@@ -26,7 +26,7 @@ function copyFile(oldf,newf){
 	oldFile.pipe(newFile);
 }
 var contents = fs.readFileSync(filename,'utf-8');
-var pages = contents.split('--page--');
+var pages = contents.split('--SLIDE--');
 //get rid of the empty page
 if(pages[0]==''){
 	pages.splice(0,1);

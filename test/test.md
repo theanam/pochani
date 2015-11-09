@@ -1,6 +1,6 @@
---page--
+--SLIDE--
 # Pochani is awesome
---page--
+--SLIDE--
 ## Here's Why
 * Create presentation from Command line
 * Draw and annotate on presentation
@@ -8,14 +8,14 @@
 * Full Touch Support
 * Modern Flexbox layout
 * Customizable animation and template
---page--
+--SLIDE--
 ## Use Markdown to craate presentations
 Here are some placeholder text
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque debitis illo explicabo qui ratione autem ipsum minus distinctio similique nostrum, voluptates magnam repudiandae. Deleniti eligendi quidem, mollitia vero tempora!
---page--
-## Add images
+--SLIDE--
+## Add images if you like
 ![tiger](img/tiger.jpg)
 ![macaw](img/macaw.jpg)
---page--
+--SLIDE--
 ## Thank you
 any questions?
