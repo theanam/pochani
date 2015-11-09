@@ -1,4 +1,4 @@
-var strokeColor="#2c3e50";
+var strokeColor='#2c3e50';
 var mouseDown = false;
 var previousX=0;
 var previousY=0;
@@ -18,17 +18,22 @@ function resizeAnnotate(){
     ctx.strokeStyle=strokeColor;
 };
 function drawingStart(e){
-        e.preventDefault();
-        mouseDown=true;
+    e.preventDefault();
+    mouseDown=true;
+    $('.toolbox').css('z-index','1000');
+    if(e.offsetX){
         previousX=e.offsetX;
         previousY=e.offsetY;
-        //make the toolbox behind
-        $('.toolbox').css('z-index','1000');
+    }
+    else{
+        //touch event
+        previousY=e.originalEvent.touches[0].clientY;
+        previousX=e.originalEvent.touches[0].clientX;
+    }
 }
 function drawingEnd(e){
         e.preventDefault();
         mouseDown=false;
-        //draw above toolbox
         $('.toolbox').css('z-index','5000');
 }
 function drawingProgress(e){
@@ -36,10 +41,21 @@ function drawingProgress(e){
         if(mouseDown){
             ctx.beginPath();
             ctx.moveTo(previousX,previousY);
-            ctx.lineTo(e.offsetX,e.offsetY);
+            var currentX;
+            var currentY;
+            if(e.offsetX){
+                currentX=e.clientX;
+                currentY=e.clientY;
+            }
+            else{
+                //touch
+                currentX=e.originalEvent.touches[0].clientX;
+                currentY=e.originalEvent.touches[0].clientY;
+            }
+            ctx.lineTo(currentX,currentY);
             ctx.stroke();
-            previousX=e.offsetX;
-            previousY=e.offsetY;
+            previousX=currentX;
+            previousY=currentY;
         }
 }
 //hide annotation on slide change
@@ -56,3 +72,10 @@ canvas.on('mousedown',drawingStart);
 canvas.on('mouseup',drawingEnd);
 canvas.on('mouseleave',drawingEnd);
 canvas.on('mousemove',drawingProgress);
+/*Touch Events*/
+if('ontouchstart' in document){
+console.log('Registering touch events...');
+canvas.on('touchstart',drawingStart);
+canvas.on('touchend',drawingEnd);
+canvas.on('touchmove',drawingProgress);
+}

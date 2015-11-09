@@ -1,6 +1,5 @@
 --page--
-welcome to pochani.js
-=====
+# welcome to pochani
 --page--
 ## Features
 * anam ahmed
