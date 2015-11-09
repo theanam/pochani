@@ -8,8 +8,8 @@ $('.annotation').on('click',function(){
 });
 //hide video if the file is opened locally
 if(document.URL.match("file:")){
-	alert("Webcam Video will not work if the file is opened without a server.")
 	$('.video').hide();
+	alert("Webcam Video will not work if the file is opened without a server.")
 }
 else{
 	$('.video').on('click',function(){

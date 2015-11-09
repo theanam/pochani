@@ -21,11 +21,15 @@ Template styles are here, this is the page you should edit to add your own style
 and make your presentation look exactly as you want
 */
 
-/*media queries*/
+/*media queries edit wisely*/
 @media (max-width: 800px){
 	html{
 		/*make text smaller for smaller screens to fit better*/
 		font-size:7px;
+	}
+	.video{
+		/*hide video for smaller screen video might block the content from viewing*/ 
+		display:none;
 	}
 }
 /*styles for Standard template*/
