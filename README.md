@@ -7,6 +7,8 @@ Pochani is a customizable Command line tool for creating great presentation from
 
 ## Features
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8GHT-bRi-ec" frameborder="0" allowfullscreen></iframe>
+
 * Create presentation from markdown file, familiar syntax, fast creation
 * Custom Styles and templates
 * Responsive by default
@@ -14,7 +16,6 @@ Pochani is a customizable Command line tool for creating great presentation from
 * Draw and annotate on your presentation
 * Show webcam feed inside your presentation
 
-> Feature video coming soon
 
 ## Installation
 
@@ -60,7 +61,7 @@ Go to the folder where your file is located, and run this command:
 
     pochani mypresentation.md
      
-This will copy all the necessary files and convert your file into a nice presentation. the filename should be **mypresentation.md.html**. The `res` folder contains all the necessary libraries and files, put them and the file in a server then open it in your browser and start presenting it. You can directly double click and open the file to present it, but for security reasons, Video won't work.
+This will copy all the necessary files and convert your file into a nice presentation. the filename should be **mypresentation.md.html**. The `res` folder contains all the necessary libraries and files, put them and the file in a server then open it in your browser and start presenting it. You can directly double click and open the file to present it, but for security reasons, Video won't work. you can use the [http-server](//www.npmjs.com/package/http-server) npm package to serve the file from the same directory. just use `npm install -g http-server` and once it's installed run `http-server` command inside the presentation folder, and navigate to `http://localhost:8080`
 
 > I'm working on a integrated server with support for remote control for a future release.
 
