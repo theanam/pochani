@@ -7,7 +7,7 @@ Pochani is a customizable Command line tool for creating great presentation from
 
 ## Features
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8GHT-bRi-ec" frameborder="0" allowfullscreen></iframe>
+### [Watch this feature video](https://www.youtube.com/watch?v=8GHT-bRi-ec)
 
 * Create presentation from markdown file, familiar syntax, fast creation
 * Custom Styles and templates
