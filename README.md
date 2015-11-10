@@ -21,7 +21,7 @@ Pochani is a customizable Command line tool for creating great presentation from
 
 Pochani requires at least **node.js 0.12.x**, and it can be installed directly with npm, just use the below command as *root* user:
 
-    npm istall -g pochani
+    npm install -g pochani
     
 If you wish to install manually, that's also possible, just clone the Git repository and create a *symbolic link* to your /usr/local/bin directory with the following code:
 

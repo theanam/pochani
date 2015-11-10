@@ -1,6 +1,6 @@
 {
   "name": "pochani",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Presentation generator for pochashider (theanam.github.io/pochaslider)",
   "main": "presentationr.js",
   "bin":{"pochani":"./pochani.js"},
