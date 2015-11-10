@@ -3,7 +3,7 @@ Pochani: Presentation from the command line
 
 Pochani is a customizable Command line tool for creating great presentation from __Markdown__ file. You don't need any memory hungry presentation application to create presentation.Simply create a markdown file and convert it to a wonderful presentation with this command line utility. The output presentation is beautiful, independent and full of useful features.
 
-#### [Click here for a demo presentation](//theanam.github.io/pochani/test/test.md.html);
+#### [Click here for a demo presentation](//theanam.github.io/pochani/test/test.md.html)
 
 ## Features
 
@@ -13,6 +13,8 @@ Pochani is a customizable Command line tool for creating great presentation from
 * Full touch support
 * Draw and annotate on your presentation
 * Show webcam feed inside your presentation
+
+>> Feature video coming soon
 
 ## Installation
 
@@ -30,7 +32,7 @@ obviously don't forget to change the `location/to/pochani` to the folder you've 
 ## Usage
 
 ### Preparing the Markdown file:
-Pochani uses [markdown](http://daringfireball.net/projects/markdown/) syntax. if you are not familiar with it, you can learn it I wrote a Bangla article on markdown, you can [Check it out](http://blog.anam.co/node/7) if you speak Bangla. You'll be amazed how quickly you can create documents with markdown. In fact, this document is written in Markdown as well.
+Pochani uses [markdown](//daringfireball.net/projects/markdown/) syntax. if you are not familiar with it, you can learn it I wrote a Bangla article on markdown, you can [Check it out](http://blog.anam.co/node/7) if you speak Bangla. You'll be amazed how quickly you can create documents with markdown. In fact, this document is written in Markdown as well.
 
 however you'll have to know one more thing, Pochani uses a special identifier **`--SLIDE--`** at the beginning of each slide.This helps create multiple slides out of a single file. **_note: it's case sensitive so, `--SLIDE--` should be in uppercase_** . Here's a sample file with three slides:
 
@@ -64,8 +66,17 @@ This will copy all the necessary files and convert your file into a nice present
 
 ### Using custom templates
 
-Pochani comes with a default template. But the main power is with you. You can [Create your own](https://github.com/theanam/pochani/blob/master/templating/README.md) very easily. just download the base template file (template.css) from [here](https://github.com/theanam/pochani/tree/master/templating) edit it, and then use the filename as an extra parameter while converting. Like this:
+Pochani comes with a default template. But the main power is with you. You can [Create your own](//github.com/theanam/pochani/blob/master/templating/README.md) very easily. just download the base template file (template.css) from [here](//github.com/theanam/pochani/tree/master/templating) edit it, and then use the filename as an extra parameter while converting. Like this:
 
     pochani filename.md mytheme.css
 
 And it will use styles from this file, rather than the default file.
+
+## Browser Support
+
+* All latest **firefox**,and **chrome** browsers
+* Microsoft Egde 12+
+* Apple Safari 8+ (Video not supported yet)
+* Internet Explorer! 9+ (partially supported)
+* Opera 32+
+* Android Browser 4.1+ (Video maybe not supported for some versions or smaller screens)
