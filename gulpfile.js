@@ -64,4 +64,4 @@ gulp.task('watch.css',function(){
 });
 gulp.task('watch',['watch.js','watch.html','watch.test','watch.css']);
 //default
-gulp.task('default',['watch','browsersync']);
+gulp.task('default',['test-compile','watch','browsersync']);

@@ -14,7 +14,7 @@ Pochani is a customizable Command line tool for creating great presentation from
 * Draw and annotate on your presentation
 * Show webcam feed inside your presentation
 
->> Feature video coming soon
+> Feature video coming soon
 
 ## Installation
 
@@ -51,7 +51,7 @@ however you'll have to know one more thing, Pochani uses a special identifier **
     # Thanks for using Pochani
     happy that it helped
 
->> make sure that the identifier --SLIDE-- is on a single line.
+> make sure that the identifier --SLIDE-- is on a single line.
 
 Save the file with **.md** or **.markdown** format. both are supported, let's say you saved it as *mypresentation.md*
 
@@ -62,7 +62,7 @@ Go to the folder where your file is located, and run this command:
      
 This will copy all the necessary files and convert your file into a nice presentation. the filename should be **mypresentation.md.html**. The `res` folder contains all the necessary libraries and files, put them and the file in a server then open it in your browser and start presenting it. You can directly double click and open the file to present it, but for security reasons, Video won't work.
 
->> I'm working on a integrated server with support for remote control for a future release.
+> I'm working on a integrated server with support for remote control for a future release.
 
 ### Using custom templates
 

@@ -1,6 +1,5 @@
 /*
-    Basic Layout file, you won't love to edit it until you have a good reason to change the layout
-    helper calasses can be found / changed in js/helper_classes.js
+    Basic Layout file, you won't love to edit it until you have a good reason to change the layout.
 */
 .slide{
     display:flex;
@@ -14,43 +13,4 @@
 }
 .slide>*{
     margin-top:0;
-}
-.slide>h2{
-    /*h2 is by default full width and algned center*/
-    flex:1 100%;
-    text-align:center;
-}
-.slide>ul,.slide>ol{
-    margin-left:50px;
-    line-height:1.5em;
-}
-/*slide that has a list*/
-.slide.has-list{
-    display:block;
-}
-/*Slide with a single image*/
-.slide.single-image img,.slide.single-image figure{
-    max-width:700px;
-    max-height:400px;
-    max-width:80vw;
-    max-height:65vh;
-    flex:1 100%;
-}
-.slide.single-image *{
-    flex:1 100%;
-    text-align:center;
-}
-/*Slide that has multiple images*/
-.slide.multiple-image img,.slide.multiple-image figure{
-    max-height:250px;
-    max-height:30vh;
-    max-width:300px;
-    max-width:90vw;
-}
-.slide.multiple-image *{
-    text-align:center;
-}
-.slide.childs-1.single-image img{
-    max-width:calc(100vw - 120px);
-    max-height:calc(100vh - 120px);
 }
