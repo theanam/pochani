@@ -1,9 +1,18 @@
 {
   "name": "pochani",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Presentation generator for pochashider (theanam.github.io/pochaslider)",
   "main": "presentationr.js",
   "bin":{"pochani":"./pochani.js"},
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/theanam/pochani"
+  },
+  "bugs": {
+  "url": "https://github.com/theanam/pochani/issues"
+  },
+  "scripts":{},
+  "homepage":"https://github.com/theanam/pochani",
   "keywords": [
     "slider",
     "presentation"
