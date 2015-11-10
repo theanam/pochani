@@ -1,8 +1,8 @@
 {
   "name": "pochani",
-  "version": "1.1.2",
-  "description": "Presentation generator for pochashider (theanam.github.io/pochaslider)",
-  "main": "presentationr.js",
+  "version": "1.1.3",
+  "description": "Create presentation with markdown",
+  "main": "pochani.js",
   "bin":{"pochani":"./pochani.js"},
   "repository": {
   "type": "git",
@@ -15,7 +15,10 @@
   "homepage":"https://github.com/theanam/pochani",
   "keywords": [
     "slider",
-    "presentation"
+    "presentation",
+    "markdown",
+    "html5",
+    "flexbox"
   ],
   "author": "Anam Ahmed",
   "license": "GPL",
