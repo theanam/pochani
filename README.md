@@ -66,7 +66,7 @@ This will copy all the necessary files and convert your file into a nice present
 
 ### Using custom templates
 
-Pochani comes with a default template. But the main power is with you. You can [Create your own](//github.com/theanam/pochani/blob/master/templating/README.md) very easily. just download the base template file (template.css) from [here](//github.com/theanam/pochani/tree/master/templating) edit it, and then use the filename as an extra parameter while converting. Like this:
+Pochani comes with a default template. But the main power is with you. You can [Create your own](//github.com/theanam/pochani/blob/master/templating) very easily. just download the base template file (template.css) from [here](//github.com/theanam/pochani/tree/master/templating) edit it, and then use the filename as an extra parameter while converting. Like this:
 
     pochani filename.md mytheme.css
 
