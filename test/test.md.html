@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A presentation created with pochani</title>
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="stylesheet" href="res/template.css">
+</head>
+<body>
+    <!-- all the slided -->
+	<div class="slidecontainer"><div class="slide"><h1 id="pochani-is-awesome">Pochani is awesome</h1>
+</div><div class="slide"><h2 id="here-s-why">Here&#39;s Why</h2>
+<ul>
+<li>Create presentation from Command line</li>
+<li>Draw and annotate on presentation</li>
+<li>Webcam feed in presentations</li>
+<li>Full Touch Support</li>
+<li>Modern Flexbox layout</li>
+<li>Customizable animation and template</li>
+</ul>
+</div><div class="slide"><h2 id="use-markdown-to-craate-presentations">Use Markdown to craate presentations</h2>
+<p>Here are some placeholder text
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque debitis illo explicabo qui ratione autem ipsum minus distinctio similique nostrum, voluptates magnam repudiandae. Deleniti eligendi quidem, mollitia vero tempora!</p>
+</div><div class="slide"><h2 id="add-images-if-you-like">Add images if you like</h2>
+<p><img src="img/tiger.jpg" alt="tiger">
+<img src="img/macaw.jpg" alt="macaw"></p>
+</div><div class="slide"><h2 id="thank-you">Thank you</h2>
+<p>any questions?</p>
+</div></div>
+    <!--/ all the slides -->
+<canvas class="annotate"></canvas>
+<div class="toolbox">
+	<div class="toolbox-inner">
+	<div class="button pin pinned"></div>
+	<div class="button annotation"></div>
+	<div class="button video"></div>
+	<div class="colors">
+		<div class="button" style="background-color:#27ae60"></div>
+		<div class="button" style="background-color:#2980b9"></div>
+		<div class="button selected" style="background-color:#e74c3c"></div>
+		<div class="button" style="background-color:#2c3e50"></div>
+		<div class="button" style="background-color:#f39c12"></div>
+		<div class="button" style="background-color:#d35400"></div>
+		<div class="button" style="background-color:#bdc3c7"></div>
+	</div>
+	</div>
+</div>
+<!-- touch navigations while drawing -->
+<div class="touchnav left"></div>
+<div class="touchnav right"></div>
+<video class="webcam" width="320px" height="240px"></video>
+<!--scripts-->
+<script src="res/jquery.js"></script>
+<script src="res/touch.js"></script>
+<script src="res/pochaslider.min.js"></script>
+<script src="res/functions.min.js"></script>
+</body>
+</html>
