@@ -9,7 +9,7 @@
 * Modern Flexbox layout
 * Customizable animation and template
 --SLIDE--
-## Use Markdown to craate presentations
+## Use Markdown to create presentations
 Here are some placeholder text
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque debitis illo explicabo qui ratione autem ipsum minus distinctio similique nostrum, voluptates magnam repudiandae. Deleniti eligendi quidem, mollitia vero tempora!
 --SLIDE--
